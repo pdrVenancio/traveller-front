@@ -10,8 +10,6 @@ import 'react-toastify/dist/ReactToastify.css';
 function App() {
   const [count, setCount] = useState(0)
 
-  const baseUrl = "https://traveller-api-xiex.vercel.app/"
-
   return (
     <>
       {/* O ToastContainer é necessário ser colocado aqui para realizar
