@@ -22,7 +22,7 @@ const AtualizarLocal = () => {
         setLocalidades(response.data);
       } catch (error) {
         console.error('Error fetching localidades:', error);
-        alert('Erro ao buscar localidades. Por favor, tente novamente mais tarde.');
+        // alert('Erro ao buscar localidades. Por favor, tente novamente mais tarde.');
       }
     };
 
@@ -90,16 +90,16 @@ const AtualizarLocal = () => {
         });
         setLocalidades(updatedLocalidades);
       } else {
-        alert('Erro ao atualizar local. Por favor, tente novamente mais tarde.');
+        // alert('Erro ao atualizar local. Por favor, tente novamente mais tarde.');
       }
 
     } catch (error) {
       if (error.inner) {
         error.inner.forEach(err => {
-          alert(err.message);
+          // alert(err.message);
         });
       } else {
-        alert('Erro ao validar os dados. Por favor, tente novamente.');
+        // alert('Erro ao validar os dados. Por favor, tente novamente.');
       }
     }
   };
@@ -124,7 +124,7 @@ const AtualizarLocal = () => {
         qtdPassagens: '',
         precoPassagem: ''
       });
-      alert('Localidade não encontrada.');
+      // alert('Localidade não encontrada.');
     }
   };
 

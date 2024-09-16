@@ -101,8 +101,8 @@ const Map = ({ apikey }) => {
   
       handleClose();
     } catch (error) {
-      // console.error('Erro ao comprar passagens:', error);
-      alert('Erro ao comprar passagens. Por favor, tente novamente.');
+      console.error('Erro ao comprar passagens:', error);
+      // alert('Erro ao comprar passagens. Por favor, tente novamente.');
     }
   };
 
